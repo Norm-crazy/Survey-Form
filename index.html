@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">Survey Test Form</h1>
+<div id="form-outer">
+  <p id="description">Please fill out the following questions.   </p>
+  <form id="survey-form">
+  <!--Here is the Name box-->  
+    <div class="question">
+      <label id="name-label">* Name: </label>
+    </div>
+    <div class="input">
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+  <!--Here is the Email box-->  
+    <div class="question">
+      <label id="email-label">* Email: </label>
+    </div>
+    <div class="input">
+      <input id="email" type="email" placeholder="Enter your Email" required>
+    </div>
+  <!--Here is the Number box-->    
+    <div class="question">
+      <label id="number-label">* Age: </label>
+    </div>
+    <div class="input">
+      <input id="number" type="number" min="1" max="100" placeholder="Age" required>
+    </div>
+  <!--Here dropdown box-->
+    <div class="question">
+      <label>Please select an option from the dropdown: </label>
+    </div>  
+    <div class="input">
+      <select id="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="value1">Student</option>
+        <option value="value2">Full Time Job</option>
+        <option value="value3">Full Time Learner</option>
+        <option value="value4">Prefer not to say</option>
+        <option value="value5">Other</option>
+      </select>
+    </div>
+  <!--Here is the radio buttons-->
+    <div class="question">
+      <label>* How do you like this site?</label>
+    </div>
+    <div class="input">
+      <ul id="radios">
+        <li class="radio">
+          <input name="radio-buttons" value="1" type="radio">
+          <label>Definitely</label>
+        </li>
+        <li class="radio">
+          <input name="radio-buttons" value="2" type="radio">
+          <label>Like</label>
+        </li>
+        <li class="radio">
+          <input name="radio-buttons" value="3" type="radio">
+          <label>Love</label>
+        </li>
+        <li class="radio">
+          <input name="radio-buttons" value="4" type="radio">
+          <label>Don't Like</label>
+        </li>
+      </ul>
+    </div>
+  <!--Here is the checkboxes-->  
+    <div class="question">
+      <label>What should I add?
+<br>(Please select any box:)</label>
+    </div>
+    <div class="input" id="check-box">
+      <input id="checkbox"  type="checkbox" value="background-color"><label>Change background color.</label>
+      <br>
+      <input id="checkbox" type="checkbox" value="font"><label>Change Font</label>
+      <br>
+      <input id="checkbox"  type="checkbox" value="image"><label>Add Image
+</label>
+      <br>
+      <input id="checkbox"  type="checkbox" value="colors"><label>Change form colors</label>
+      <br>
+      <input id="checkbox"  type="checkbox" value="video"><label>Add Video</label>
+    </div>
+  <!--Here is the commment box-->
+    <div class="question">
+    <label>Please enter any Comments or Suggestions?</label> 
+    </div>
+    <div class="input">
+      <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+  <!--Here is the Submit button-->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>

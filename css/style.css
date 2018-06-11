@@ -1,0 +1,83 @@
+header {
+  margin: 20px;
+}
+body{
+ background-color: grey;
+ text-align: center;
+}
+
+#form-outer {
+  background-color: white;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.question {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.input {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+}
+
+#dropdown {
+  margin-top: 15px;  
+}
+
+ul{
+  list-style-type: none;
+}
+
+#radios {
+  margin-top: 2%; 
+}
+
+.radio {
+  position: relative;
+  margin-left: -50px;
+  padding-bottom: 3px;
+}
+
+#check-box {
+  padding-bottom: 20px;
+}
+
+#checkbox {
+  margin-left: -5px;
+}
+
+#comments {
+  margin-left: -5px;
+}
+
+#submit {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  height: 35px;
+  width: 96px;
+  margin: 20px;
+  border: 0px solid;
+}
+
+
+@media screen and (max-width: 580px) {
+  .question {
+    width: 100%;
+    text-align: left;
+  }
+  .input {
+    width: 80%;
+    float: left;
+  }
+  select {
+    width: 100%;
+  }
+}
